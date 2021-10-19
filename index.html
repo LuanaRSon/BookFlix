@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BookFlix</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- OWL CSS - CAROUSEL -->
+    <link rel="stylesheet" href="style/owl/owl.carousel.min.css" />
+    <link rel="stylesheet" href="style/owl/owl.theme.default.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h2>BOOKFLIX</h2>
+        <nav>
+          <a href="#inicio">Início</a>
+          <a href="#romances">Romances</a>
+          <a href="#fantasia">Fantasia</a>
+          <a href="#outros">Outros</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="inicio">
+      <div class="container">
+        <h3 class="book-title">Como Eu Era Antes de Você</h3>
+        <p class="book-description">
+          Will Traynor, de 35 anos, é inteligente, rico e mal-humorado. Preso a
+          uma cadeira de rodas depois de um acidente de moto, o antes ativo e
+          esportivo Will desconta toda a sua amargura em quem estiver por perto
+          e planeja dar um fim ao seu sofrimento. O que Will não sabe é que Lou
+          está prestes a trazer cor a sua vida.
+        </p>
+        <p class="book-description">
+          Clique no botão abaixo para saber mais informações.
+        </p>
+        <div class="buttons">
+          <button role="button" class="button">
+            <i class="fas fa-bookmark"></i> LER AGORA
+          </button>
+          <button onclick="startModal()" role="button" class="button">
+            <i class="fas fa-info-circle"></i> MAIS INFORMAÇÕES
+          </button>
+        </div>
+      </div>
+    </main>
+
+    <section id="romances" class="container">
+      <h3 class="book-classification">Romances</h3>
+      <div class="carousel">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/comoeuera.jpg"
+              alt="Capa do livro Como Eu Era Antes de Você"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/depoisdevoce.jpg"
+              alt="Capa do livro Depois de Você"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/aindasoueu.jpg"
+              alt="Capa do livro Ainda Sou Eu"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/aultimacartadeamor.jpg"
+              alt="Capa do livro A Última Carta de Amor"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/ummaisum.jpg"
+              alt="Capa do livro Um Mais Um"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/mardatranquilidade.jpg"
+              alt="Capa do livro Mar da Tranquilidade"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/feitadefumacaeosso.jpg"
+              alt="Capa do livro Feita de Fumaça e Osso"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/feitadesangueeestrelas.jpg"
+              alt="Capa do livro Feita de Sangue e Estrelas"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/51Og6cgHaaL.jpg"
+              alt="Capa do livro Sonhos com Deuses e Monstros"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/belezaperdida.jpg"
+              alt="Capa do livro Beleza Perdida"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/obeijodassombras.jpg"
+              alt="Capa do livro O Beijo das Sombras"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="fantasia" class="container">
+      <h3 class="book-classification">Fantasia</h3>
+      <div class="carousel">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/thewitcher1.jpg"
+              alt="Capa do livro The Witcher O Último Desejo"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/thewitcher2.jpg"
+              alt="Capa do livro The Witcher A Espada do Destino"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/thewitcher3.jpg"
+              alt="Capa do livro The Witcher O Sangue dos Elfos"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/thewitcher4.jpg"
+              alt="Capa do livro The Witcher Tempo do Desprezo"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/thewitcher5.jpg"
+              alt="Capa do livro The Witcher Batismo de Fogo"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/thewitcher6.jpg"
+              alt="Capa do livro The Witcher A Torre da Andorinha"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/thewitcher7.jpg"
+              alt="Capa do livro The Witcher A Senhora do Lago"
+            />
+          </div>
+
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/espadachimcarvao.jpg"
+              alt="Capa do livro O Espadachim de Carvão"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/tronodevidro.jpg"
+              alt="Capa do livro Trono de Vidro"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="outros" class="container">
+      <h3 class="book-classification">Outros</h3>
+      <div class="carousel">
+        <div class="owl-carousel owl-theme">
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/HTML5eCSS3.jpg"
+              alt="Capa do livro HTML 5 E CSS 3: Domine a Web do Futuro"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/javascriptguia.jpg"
+              alt="Capa do livro Javascript Guia do Programador"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/arquiteturalimpa.jpg"
+              alt="Capa do livro Arquitetura Limpa: O Guia do Artesão para Estrutura e Design de Software"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/codigolimpo.jpg"
+              alt="Capa do livro Código Limpo"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/html5.jpg"
+              alt="Capa do livro Programação Profissional em HTML 5"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/logicadeprog.jpg"
+              alt="Capa do livro Algoritmos e Lógica de Programação"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/javascriptguia2.jpg"
+              alt="Capa do livro Javascript O Guia Definitivo"
+            />
+          </div>
+          <div class="item">
+            <img
+              class="books-img"
+              src="img/python.jpg"
+              alt="Capa do livro Python Fluente"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div id="modal-info" class="modal-container">
+      <div class="modal">
+        <button class="close-btn">
+          <i id="x-modal" class="fas fa-times"></i>
+        </button>
+        <div class="first-part-modal">
+          <div class="title-and-img">
+            <img
+              src="img/comoeuera.jpg"
+              alt="Capa do livro Como Eu Era Antes de Você"
+              class="modal-img"
+            />
+            <h3>Como Eu Era Antes de Você</h3>
+          </div>
+
+          <div class="stars">
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+          </div>
+          <div class="modal-description">
+            <h4>2012</h4>
+            <h4>Jojo Moyes</h4>
+          </div>
+        </div>
+        <div class="modal-p">
+          <p>
+            Em Como Eu Era Antes de Você, Lou Clark é uma jovem cheia de vida e
+            espontaneidade, que sabe uma porção de coisas. Ela sabe quantos
+            passos separam sua casa do ponto de ônibus. Sabe que adora trabalhar
+            como atendente em um café e sabe que provavelmente não ama seu
+            namorado, Patrick. O que Lou não sabe é que está prestes a perder o
+            emprego, e que isso a obrigará a repensar toda sua vida.
+          </p>
+          <p>
+            Will Traynor, por sua vez, sabe que o acidente com a motocicleta
+            tirou dele a vontade de viver. Ele sabe que o mundo agora parece
+            pequeno e sem graça, e sabe exatamente como vai dar um fim a tudo
+            isso.
+          </p>
+          <p>
+            O que Will não sabe é que a chegada de Lou vai trazer de volta a cor
+            à sua vida. E nenhum deles desconfia de que esse encontro irá mudar
+            para sempre a história dos dois.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/2b9f0cf628.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/owl/jquery.min.js"></script>
+    <script src="js/owl/owl.carousel.min.js"></script>
+    <script src="js/owl/setup.js"></script>
+  </body>
+</html>

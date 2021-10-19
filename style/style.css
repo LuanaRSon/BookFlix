@@ -1,0 +1,292 @@
+:root {
+  --light-color: #00b2e4;
+  --creamy: #ffefce;
+  --black-light: #141414;
+  --black-light-modal: #141414ed;
+  --black: #000;
+  --grey: #aaa;
+  --darker-grey: #3636364d;
+  --white: #fff;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Serif', serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--black-light);
+  color: var(--white);
+  width: 100%;
+}
+
+.container {
+  margin: 0 20px;
+}
+
+/* ---- HEADER ---- */
+
+header {
+  background: var(--darker-grey);
+}
+
+header .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--grey);
+  margin-right: 10px;
+}
+
+nav a:hover {
+  color: var(--white);
+}
+
+header h2 {
+  color: var(--light-color);
+  font-size: 38px;
+}
+
+/* ---- MAIN CONTAINER ---- */
+
+main .container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 400px;
+  text-align: center;
+}
+
+.book-title {
+  margin-top: 10%;
+  font-size: 28px;
+  text-transform: uppercase;
+}
+
+.book-description {
+  line-height: 18px;
+  margin-top: 20px;
+}
+
+.button {
+  width: 250px;
+  padding: 10px 0;
+  margin: 30px 5px 0 0;
+
+  cursor: pointer;
+  background-color: var(--black);
+  color: var(--white);
+  border: none;
+  transition: 0.5s ease all;
+}
+
+.button:hover {
+  background-color: var(--white);
+  color: var(--black);
+  border: none;
+  border-radius: 2px;
+}
+
+.button i {
+  margin-right: 5px;
+}
+
+.books-img {
+  margin-top: 30px;
+  max-height: 100%;
+  max-width: 100%;
+  display: block;
+}
+
+/* ---- SECTION ---- */
+.book-classification {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 15px;
+}
+
+/* ---- MODAL ---- */
+
+.checked {
+  color: orange;
+}
+
+.modal-container {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 5;
+  display: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.modal-container.show {
+  display: flex;
+}
+
+.modal {
+  text-align: center;
+  position: relative;
+  background: var(--black-light-modal);
+  border-radius: 10px;
+  padding: 20px;
+  width: 100vw;
+  height: 100vh;
+}
+
+@keyframes modal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -60px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.show .modal {
+  animation: modal 0.3s;
+}
+
+.close-btn {
+  background: var(--white);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 20px;
+  margin: 15px;
+  padding: 0 5px;
+  position: absolute;
+  right: 0;
+  top: -5px;
+}
+
+.modal-img {
+  display: none;
+}
+
+.modal h3 {
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.modal-description {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0 15px 0;
+  gap: 5px 15px;
+}
+
+.stars {
+  margin-top: 15px;
+}
+
+.modal p {
+  line-height: 20px;
+}
+
+/* ---- MEDIA QUERY ---- */
+
+@media screen and (min-width: 640px) {
+  header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  header nav a {
+    padding-right: 10px;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .button {
+    width: 210px;
+  }
+
+  main .container {
+    text-align: left;
+    width: 70%;
+  }
+
+  .book-classification {
+    text-align: left;
+  }
+
+  /* ---- MODAL ---- */
+  .modal-container {
+    align-items: center;
+  }
+
+  .modal {
+    width: 80%;
+    height: 75%;
+  }
+
+  .modal-img {
+    display: inline-block;
+    margin-top: 10px;
+    max-width: 250px;
+  }
+
+  .close-btn {
+    padding: 5px 10px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .modal {
+    display: flex;
+    text-align: left;
+  }
+
+  .book-description {
+    font-size: 20px;
+    line-height: 23px;
+  }
+
+  .first-part-modal {
+    text-align: center;
+    padding-right: 20px;
+  }
+
+  .modal-img {
+    max-width: 250px;
+  }
+
+  .modal h3 {
+    margin-top: 15px;
+  }
+
+  .modal-p {
+    margin-top: 2%;
+  }
+
+  .modal p {
+    margin-bottom: 5%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .modal {
+    width: 50%;
+    height: 60%;
+  }
+}
