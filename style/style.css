@@ -260,6 +260,7 @@ main .container {
   .modal {
     display: flex;
     text-align: left;
+    height: 60%;
   }
 
   .book-description {
@@ -285,24 +286,20 @@ main .container {
   }
 
   .modal p {
+    margin-left: 10px;
     margin-bottom: 5%;
+    width: 75%;
   }
 }
 
 @media screen and (min-width: 1600px) {
   .modal {
     width: 50%;
-    height: 50%;
+    height: 60%;
   }
 
   .modal-p {
     margin: 40px 0 0 0;
-    width: 55%;
-  }
-}
-
-@media screen and (min-width: 1900px) {
-  .modal {
-    height: 45%;
+    width: 70%;
   }
 }
