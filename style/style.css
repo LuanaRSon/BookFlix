@@ -292,6 +292,17 @@ main .container {
 @media screen and (min-width: 1600px) {
   .modal {
     width: 50%;
-    height: 65%;
+    height: 50%;
+  }
+
+  .modal-p {
+    margin: 40px 0 0 0;
+    width: 55%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .modal {
+    height: 45%;
   }
 }
