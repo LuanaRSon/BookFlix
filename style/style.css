@@ -81,13 +81,18 @@ main .container {
 .button {
   width: 250px;
   padding: 10px 0;
-  margin: 30px 5px 0 0;
+  margin: 5px 5px 0 0;
 
   cursor: pointer;
   background-color: var(--black);
   color: var(--white);
   border: none;
   transition: 0.5s ease all;
+}
+
+.buttons {
+  margin: 20px;
+  margin-left: 0;
 }
 
 .button:hover {
@@ -287,6 +292,6 @@ main .container {
 @media screen and (min-width: 1600px) {
   .modal {
     width: 50%;
-    height: 60%;
+    height: 65%;
   }
 }
