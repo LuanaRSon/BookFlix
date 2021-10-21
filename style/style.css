@@ -44,7 +44,8 @@ header .container {
 nav a {
   text-decoration: none;
   color: var(--grey);
-  margin-right: 10px;
+  font-size: 15px;
+  margin-right: 5px;
 }
 
 nav a:hover {
@@ -53,7 +54,7 @@ nav a:hover {
 
 header h2 {
   color: var(--light-color);
-  font-size: 38px;
+  font-size: 30px;
 }
 
 /* ---- MAIN CONTAINER ---- */
@@ -68,14 +69,18 @@ main .container {
 }
 
 .book-title {
-  margin-top: 10%;
-  font-size: 28px;
+  margin-top: 60px;
+  font-size: 22px;
   text-transform: uppercase;
 }
 
 .book-description {
   line-height: 18px;
   margin-top: 20px;
+}
+
+.buttons {
+  margin: 20px 5px 50px 0;
 }
 
 .button {
@@ -88,11 +93,6 @@ main .container {
   color: var(--white);
   border: none;
   transition: 0.5s ease all;
-}
-
-.buttons {
-  margin: 20px;
-  margin-left: 0;
 }
 
 .button:hover {
@@ -117,7 +117,7 @@ main .container {
 .book-classification {
   text-align: center;
   font-size: 22px;
-  margin-top: 15px;
+  padding-top: 20px;
 }
 
 /* ---- MODAL ---- */
@@ -213,8 +213,18 @@ main .container {
     justify-content: space-between;
   }
 
+  header h2 {
+    font-size: 28px;
+  }
+
   header nav a {
     padding-right: 10px;
+    font-size: 16px;
+  }
+
+  .book-title {
+    margin-top: 10%;
+    font-size: 28px;
   }
 
   .buttons {
